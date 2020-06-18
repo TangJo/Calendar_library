@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="上一个月" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:text="下一个月" />
+    </RelativeLayout>
+
+    <com.streamax.calendar.view.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.streamax.calendar.view.CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:borderLineColor="@android:color/transparent"
+        app:isCircle="true"
+        app:isFill="false"
+        app:selectedColor="@android:color/holo_red_light"
+        app:viewHeightRatio="0.4"
+        app:viewWidthRatio="1"
+        app:mainBgColor="@android:color/white"
+        app:weekTextColor="@android:color/white"
+        app:weekTextSize="@android:dimen/dialog_min_width_major"
+        app:todayNumberColor="@android:color/holo_red_light"
+        app:defaultMonthColor="@android:color/black"
+        app:invisibleMonthColor="@android:color/darker_gray"
+        app:monthTextSize="@android:dimen/dialog_min_width_major"
+        app:gpsMarkerColor="@android:color/holo_red_light"
+        app:weekBgColor="@android:color/darker_gray" />
+
+</LinearLayout>

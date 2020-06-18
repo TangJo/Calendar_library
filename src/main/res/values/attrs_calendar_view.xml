@@ -1,0 +1,52 @@
+<resources>
+
+    <declare-styleable name="CalendarView">
+        <!--设置控件宽度比例-->
+        <attr name="viewWidthRatio" format="float" />
+        <!--设置控件高度比例-->
+        <attr name="viewHeightRatio" format="float" />
+        <!--设置主体颜色-->
+        <attr name="mainBgColor" format="color" />
+        <!--设置星期背景颜色-->
+        <attr name="weekBgColor" format="color" />
+        <!--设置星期字体颜色-->
+        <attr name="weekTextColor" format="color" />
+
+        <!--设置星期圆颜色-->
+        <attr name="weekCircleColor" format="color" />
+        <!--设置星期文字大小-->
+        <attr name="weekTextSize" format="dimension" />
+        <!--设置边界线颜色-->
+        <attr name="borderLineColor" format="color" />
+        <!--设置当天文本颜色-->
+        <attr name="todayNumberColor" format="color" />
+        <!--设置选中项颜色-->
+        <attr name="selectedColor" format="color" />
+        <!--是否填充-->
+        <attr name="isFill" format="boolean" />
+        <!--是否显示圆-->
+        <attr name="isCircle" format="boolean" />
+        <!--设置日期颜色-->
+        <attr name="defaultMonthColor" format="color" />
+        <!--设置不可用日期颜色-->
+        <attr name="invisibleMonthColor" format="color" />
+        <!--设置日期文本字体大小-->
+        <attr name="monthTextSize" format="dimension" />
+        <!--设置gps小点颜色-->
+        <attr name="gpsMarkerColor" format="color" />
+
+        <!--日历录像存在画圆-->
+        <attr name="dayBgCircle" format="boolean"/>
+
+        <!--锁定录像颜色-->
+        <attr name="lockVideoColor" format="color"/>
+
+        <!--正常录像颜色-->
+        <attr name="normalVideoColor" format="color"/>
+
+        <!--报警录像颜色-->
+        <attr name="alarmVideoColor" format="color"/>
+
+    </declare-styleable>
+
+</resources>
